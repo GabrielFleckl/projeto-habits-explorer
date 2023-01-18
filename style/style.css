@@ -1,10 +1,95 @@
 /* Variables */
 /*----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background-color: #09090a;
   color: #f3f2f2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9em;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: #f3f2f2;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 125%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  color: #8b5cf6;
+  background-color: #f3f2f2;
+  transition-duration: 0.3s;
+}
+
+form {
+  display: flex;
+  padding: 0 48px;
+}
+form .habits {
+  margin-top: 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+form .habit {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+  margin-bottom: 2em;
+}
+form .day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+form .date {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  border: 2px solid #27272a;
+  background-color: #18181b;
+}
+input:checked {
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
 }/*# sourceMappingURL=style.css.map */

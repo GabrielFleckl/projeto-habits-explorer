@@ -1,5 +1,6 @@
 /* Variables */
 $background-color: #09090a
+$date: #a1a1aa
 $white: #f3f2f2
 $zinc-900: #18181b
 $zinc-800:#27272a
@@ -12,13 +13,97 @@ $violet-400:#a78bfa
 $violet-300:#c6b5fd
 /*----------------------*/
 
+// Reset CSS
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
 body
+  height: 100vh
+  background-color: $background-color
+  color: $white
+
+header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 48px
+
+button
   display: flex
   justify-content: center
   align-items: center
-  height: 100vh
-
-  background-color: $background-color
+  gap: 0.9em
+  padding: 16px 24px
+  border-radius: 8px
+  border: 1px solid $violet-500
+  background-color: transparent 
   color: $white
+  font-family: 'Inter', sans-serif
+  font-weight: 600
+  line-height: 125%
+  cursor: pointer
+  transition: 0.3s
+  &:hover
+    color: $violet-500
+    background-color: $white
+    transition-duration: 0.3s
+
+
+form
+  display: flex
+  padding: 0 48px
+  .habits
+    margin-top: 53px
+    display: flex
+    flex-direction: column
+    gap: 24px
+  .habit
+    width: 64px
+    height: 64px
+    font-size: 32px
+    display: flex
+    align-items: center
+    justify-content: center
+  .days
+    display: flex
+    margin-left: 32px
+    gap: 48px
+    margin-bottom: 2em
+  .day
+    display: flex
+    flex-direction: column
+    gap: 24px
+  .date
+    margin-bottom: 8px
+    font-family: 'Roboto Mono'
+    font-size: 20px
+    line-height: 125%
+    color: $date
+    text-align: center
+
+// checkbox
+input
+  appearance: none
+  -webkit-appearance: none
+  width: 64px
+  height: 64px
+  border-radius: 8px
+  border: 2px solid $zinc-800
+  background-color: $zinc-900
+  &:checked
+    background-color: $violet-500
+    border: 2px solid $violet-400
+
+
+
+
+
+
+
+
+
 
 
