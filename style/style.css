@@ -17,6 +17,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 48px;
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -43,7 +46,10 @@ button:hover {
 
 form {
   display: flex;
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 form .habits {
   margin-top: 53px;
@@ -70,7 +76,7 @@ form .day {
   flex-direction: column;
   gap: 24px;
 }
-form .date {
+form .day div {
   margin-bottom: 8px;
   font-family: "Roboto Mono";
   font-size: 20px;
@@ -80,6 +86,7 @@ form .date {
 }
 
 input {
+  cursor: pointer;
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -88,8 +95,20 @@ input {
   border-radius: 8px;
   border: 2px solid #27272a;
   background-color: #18181b;
+  transition: 0.3s;
 }
 input:checked {
   background-color: #8b5cf6;
   border: 2px solid #a78bfa;
+}
+input:hover {
+  background-color: #8b5cf6;
+  border: 2px solid #a78bfa;
+  transition-duration: 0.3s;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

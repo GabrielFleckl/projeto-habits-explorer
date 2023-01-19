@@ -30,6 +30,9 @@ header
   align-items: center
   justify-content: space-between
   padding: 48px
+  position: fixed
+  width: 100%
+  background-color: $background-color
 
 button
   display: flex
@@ -54,7 +57,8 @@ button
 
 form
   display: flex
-  padding: 0 48px
+  padding: 182px 48px 48px
+  width: fit-content
   .habits
     margin-top: 53px
     display: flex
@@ -76,16 +80,18 @@ form
     display: flex
     flex-direction: column
     gap: 24px
-  .date
-    margin-bottom: 8px
-    font-family: 'Roboto Mono'
-    font-size: 20px
-    line-height: 125%
-    color: $date
-    text-align: center
+    
+    div
+      margin-bottom: 8px
+      font-family: 'Roboto Mono'
+      font-size: 20px
+      line-height: 125%
+      color: $date
+      text-align: center
 
 // checkbox
 input
+  cursor: pointer
   appearance: none
   -webkit-appearance: none
   width: 64px
@@ -93,12 +99,21 @@ input
   border-radius: 8px
   border: 2px solid $zinc-800
   background-color: $zinc-900
+  transition: 0.3s
   &:checked
     background-color: $violet-500
     border: 2px solid $violet-400
+  &:hover
+    background-color: $violet-500
+    border: 2px solid $violet-400
+    transition-duration: 0.3s
 
 
-
+@media (max-width: 570px) 
+  button div
+    display: none
+  
+  
 
 
 
