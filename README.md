@@ -39,7 +39,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Habit Traker, uma aplicação Web para usar como assistente de controle de hábitos para o seu dia-a-dia, desenvolvido apenas com HTML, SASS e JavaScript durante trilha Explorer NLW Setup.
+Habit Tracker, uma ferramenta de acompanhamento de hábitos para o usuário colocar em prática suas resoluções e metas, ou seja, registrar ações e acompanhar a evolução dos novos hábitos que deseja colocar na sua rotina. 
+
+Desenvolvido apenas com HTML, SASS e JavaScript durante trilha Explorer NLW Setup...
 
 ## 📝 Licença
 
