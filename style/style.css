@@ -10,6 +10,8 @@ body {
   height: 100vh;
   background-color: #09090a;
   color: #f3f2f2;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 header {
