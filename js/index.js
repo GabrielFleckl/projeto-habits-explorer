@@ -19,20 +19,12 @@ function add() {
 }
 
 function save() {
-  nlwSetup.data()
+  localStorage.setItem('NLWSetup@habits', JSON.stringify(nlwSetup.data))
+
 }
 
-
-// const data = {
-//   run:['01-01', '01-02', '01-06'],
-//   water: ['01-03'],
-//   gym: [],
-//   sleep: [],
-//   study: []
-
-// }
-
-// nlwSetup.setData(data)
-// nlwSetup.load()
+const data = JSON.parse(localStorage.getItem('NLWSetup@habits')) || {}
+nlwSetup.setData(data)
+nlwSetup.load()
 
 
